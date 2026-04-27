@@ -53,26 +53,29 @@ cd Deep-Insight-Agent
 ```
 Deep-Insight-Agent/
 ├── insight-engine/
-│   ├── SKILL.md              # Core dispatch system (entry point)
-│   ├── methods/              # 12 analysis methods
-│   ├── references/           # Routing rules, quality standards
-│   └── templates/            # Output templates
+│   ├── en/                         # English version
+│   │   ├── SKILL.md                # Core dispatch system
+│   │   └── methods/                # 12 analysis methods
+│   ├── zh/                         # 中文版
+│   │   ├── SKILL.md                # 核心调度系统
+│   │   └── methods/                # 12种分析方法
+│   ├── references/                 # Shared references
+│   └── templates/                  # Output templates
 ├── memory/
-│   ├── DESIGN.md             # Memory system design
-│   ├── schema/               # Storage structure definitions
-│   └── examples/             # Example files
+│   ├── DESIGN.md                   # Memory system design
+│   ├── schema/                     # Storage definitions
+│   └── examples/                   # Example files
 ├── examples/
-│   ├── input/                # Example inputs
-│   └── output/               # Example outputs
+│   ├── input/                      # Example inputs
+│   └── output/                     # Example outputs
 └── docs/
-    ├── how-to-customize.md   # How to customize
-    ├── how-to-add-skills.md  # How to add new methods
-    └── memory-system.md      # Memory system design principles
+    ├── en/                         # English docs
+    └── zh/                         # 中文文档
 ```
 
 ### 3. Read the Entry Point
 
-Start with `insight-engine/SKILL.md` — the dispatch center that defines:
+Start with `insight-engine/en/SKILL.md` (English) or `insight-engine/zh/SKILL.md` (中文) — the dispatch center that defines:
 - Content diagnosis logic
 - Method selection routing
 - Output quality standards
@@ -80,7 +83,7 @@ Start with `insight-engine/SKILL.md` — the dispatch center that defines:
 
 ### 4. Choose Your Method
 
-Based on your recording type, select the corresponding method file from `insight-engine/methods/` and follow its role definition and output structure.
+Based on your recording type, select the corresponding method file from `insight-engine/en/methods/` or `insight-engine/zh/methods/` and follow its role definition and output structure.
 
 ---
 

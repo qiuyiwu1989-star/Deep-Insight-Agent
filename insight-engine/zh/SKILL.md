@@ -5,7 +5,7 @@ description: 多维洞察调度系统——基于会议/讲课/谈判/聊天录�
 
 # Deep Insight Agent · 多维洞察调度系统
 
-[English](SKILL.md)
+> [English](../en/SKILL.md)
 
 ## 定位
 
@@ -190,18 +190,24 @@ Deep Insight Agent 不是单一分析器，而是一个**方法调度系统**：
 
 ## 方法文件索引
 
-- `methods/001-full-spectrum.md` - 全谱深度分析，8维结构化输出
-- `methods/002-bone-piercing.md` - 真相刺穿，揭露意图与核心矛盾
-- `methods/003-topic-mining.md` - 写作素材与文章方向挖掘
-- `methods/004-knowledge-architect.md` - 概念图谱与可迁移框架
-- `methods/005-execution-tracker.md` - 承诺/假设/悬空事项分层管理
-- `methods/006-brainstorm-capture.md` - 创意识别与潜力评估
-- `methods/007-first-principles.md` - 假设审计与认知盲区
-- `methods/008-mckinsey-strategy.md` - 战略命题与选择代价
-- `methods/009-meeting-secretary.md` - 结构化会议文档
-- `methods/010-business-negotiation.md` - 博弈拆解：权力、策略、利益
-- `methods/011-casual-chat.md` - 关系与人格拆解
-- `methods/012-opportunity-assessment.md` - 合作价值拆解
+### 中文版
+
+- [`methods/001-full-spectrum.md`](methods/001-full-spectrum.md) - 总秘·全谱分析，8维结构化输出
+- [`methods/002-bone-piercing.md`](methods/002-bone-piercing.md) - 问骨·一针见血，揭露意图与核心矛盾
+- [`methods/003-topic-mining.md`](methods/003-topic-mining.md) - 选题挖掘，写作素材与文章方向
+- [`methods/004-knowledge-architect.md`](methods/004-knowledge-architect.md) - 知识结构师，概念图谱与可迁移框架
+- [`methods/005-execution-tracker.md`](methods/005-execution-tracker.md) - 执行力追踪，承诺/假设/悬空事项
+- [`methods/006-brainstorm-capture.md`](methods/006-brainstorm-capture.md) - 脑洞捕捉，创意识别与潜力评估
+- [`methods/007-first-principles.md`](methods/007-first-principles.md) - 第一性原理，假设审计与认知盲区
+- [`methods/008-mckinsey-strategy.md`](methods/008-mckinsey-strategy.md) - 麦肯锡战略，战略命题与选择代价
+- [`methods/009-meeting-secretary.md`](methods/009-meeting-secretary.md) - 会议秘书，结构化会议文档
+- [`methods/010-business-negotiation.md`](methods/010-business-negotiation.md) - 商务谈判，博弈拆解
+- [`methods/011-casual-chat.md`](methods/011-casual-chat.md) - 朋友聊天，关系与人格拆解
+- [`methods/012-opportunity-assessment.md`](methods/012-opportunity-assessment.md) - 商业机会评估，合作价值拆解
+
+### English
+
+See [English SKILL](../en/SKILL.md) for English method index.
 
 ---
 

@@ -53,26 +53,29 @@ cd Deep-Insight-Agent
 ```
 Deep-Insight-Agent/
 ├── insight-engine/
-│   ├── SKILL.md              # 核心调度系统（入口）
-│   ├── methods/              # 12种分析方法
-│   ├── references/           # 路由规则、质量标准
-│   └── templates/            # 输出模板
+│   ├── zh/                         # 中文版
+│   │   ├── SKILL.md                # 核心调度系统（入口）
+│   │   └── methods/                # 12种分析方法
+│   ├── en/                         # English version
+│   │   ├── SKILL.md                # Core dispatch system
+│   │   └── methods/                # 12 analysis methods
+│   ├── references/                 # 共享参考文件
+│   └── templates/                  # 输出模板
 ├── memory/
-│   ├── DESIGN.md             # 记忆系统设计
-│   ├── schema/               # 存储结构定义
-│   └── examples/             # 示例文件
+│   ├── DESIGN.md                   # 记忆系统设计
+│   ├── schema/                     # 存储结构定义
+│   └── examples/                   # 示例文件
 ├── examples/
-│   ├── input/                # 示例输入
-│   └── output/               # 示例输出
+│   ├── input/                      # 示例输入
+│   └── output/                     # 示例输出
 └── docs/
-    ├── how-to-customize.md   # 如何自定义
-    ├── how-to-add-skills.md  # 如何添加新方法
-    └── memory-system.md      # 记忆系统设计原理
+    ├── en/                         # English docs
+    └── zh/                         # 中文文档
 ```
 
 ### 3. 阅读入口文件
 
-从 `insight-engine/SKILL.md` 开始——这是整个系统的调度中心，定义了：
+从 `insight-engine/zh/SKILL.md`（中文）或 `insight-engine/en/SKILL.md`（English）开始——这是整个系统的调度中心，定义了：
 - 内容诊断逻辑
 - 方法选择路由
 - 输出质量标准
@@ -80,7 +83,7 @@ Deep-Insight-Agent/
 
 ### 4. 选择你的方法
 
-根据你的录音类型，选择对应的方法文件（`insight-engine/methods/`），按其中的角色定位和输出结构执行分析。
+根据你的录音类型，选择对应的方法文件（`insight-engine/zh/methods/` 或 `insight-engine/en/methods/`），按其中的角色定位和输出结构执行分析。
 
 ---
 
