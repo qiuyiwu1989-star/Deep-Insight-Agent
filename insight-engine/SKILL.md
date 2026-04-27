@@ -188,7 +188,9 @@ Deep Insight Agent 不是单一分析器，而是一个**方法调度系统**：
 
 ---
 
-## 方法文件索引
+## Method File Index
+
+### 中文版
 
 - `methods/001-full-spectrum.md` - 全谱深度分析，8维结构化输出
 - `methods/002-bone-piercing.md` - 真相刺穿，揭露意图与核心矛盾
@@ -202,6 +204,21 @@ Deep Insight Agent 不是单一分析器，而是一个**方法调度系统**：
 - `methods/010-business-negotiation.md` - 博弈拆解：权力、策略、利益
 - `methods/011-casual-chat.md` - 关系与人格拆解
 - `methods/012-opportunity-assessment.md` - 合作价值拆解
+
+### English
+
+- `methods/en/001-full-spectrum.md` - Full Spectrum Analysis
+- `methods/en/002-bone-piercing.md` - Bone Piercing · Cut Through to Truth
+- `methods/en/003-topic-mining.md` - Topic Mining · Writing Material Extraction
+- `methods/en/004-knowledge-architect.md` - Knowledge Architect · Concept Graph
+- `methods/en/005-execution-tracker.md` - Execution Tracker · Action Stratification
+- `methods/en/006-brainstorm-capture.md` - Brainstorm Capture · Creative Sparks
+- `methods/en/007-first-principles.md` - First Principles · Assumption Audit
+- `methods/en/008-mckinsey-strategy.md` - McKinsey Strategy · Choice Costs
+- `methods/en/009-meeting-secretary.md` - Meeting Secretary · Documentation
+- `methods/en/010-business-negotiation.md` - Business Negotiation · Game Analysis
+- `methods/en/011-casual-chat.md` - Casual Chat · Relationship Analysis
+- `methods/en/012-opportunity-assessment.md` - Opportunity Assessment · Collaboration Value
 
 ---
 
