@@ -1,54 +1,56 @@
 # Deep Insight Agent
 
-> Transform chaotic meeting recordings, lectures, and strategic discussions into actionable insight assets.
+> **EN**: Transform chaotic meeting recordings, lectures, and strategic discussions into actionable insight assets.
+>
+> **CN**: 将混沌的会议录音、讲课录音、战略讨论转化为可驱动决策的洞察资产。
 
-Deep Insight Agent is a **deep insight analysis framework** — not a summarizer, but a translator of truth.
+**Deep Insight Agent** is a **deep insight analysis framework** — not a summarizer, but a translator of truth. It doesn't repeat what people said. It reveals what they didn't say.
 
-It doesn't repeat what people said. It reveals what they didn't say.
-
-[中文版](README-zh.md)
-
----
-
-## Core Capabilities
-
-- **12 Analysis Methods**: Intelligently matched by recording type — covering strategy, negotiation, brainstorming, lectures, and more
-- **Multi-User Isolation**: Each user's analysis records are strictly isolated, no cross-user references
-- **Speaker Identity Inference**: Automatically identify speakers from transcripts with cross-validation and confidence scoring
-- **Cross-Recording Longitudinal Tracking**: Automatically compare stance evolution and action item fulfillment across multiple meetings
-- **Structured Output**: Core judgments + evidence citations + visualizations + action recommendations — no filler text
+**Deep Insight Agent** 是一个**深度洞察分析框架**——不是总结器，是真相的翻译官。它不复述别人说过的话，而是说出他们没说出口的真话。
 
 ---
 
-## 12 Analysis Methods
+## Core Capabilities · 核心能力
 
-| # | Method | Core Function | Best For |
-|---|--------|--------------|----------|
-| 001 | Full Spectrum | Complete 8-dimensional structured analysis | Important strategy meetings |
-| 002 | Bone Piercing | Penetrate surface, reveal true intentions & core contradictions | High-density strategy/fundraising/partnership negotiations |
-| 003 | Topic Mining | Extract writing materials & article directions from recordings | Lectures, meetings with original insights |
-| 004 | Knowledge Architect | Concept extraction & knowledge graph construction | Lectures, framework discussions |
-| 005 | Execution Tracker | Distinguish commitments/assumptions/hanging items | Decision meetings, execution syncs |
-| 006 | Brainstorm Capture | Identify & develop creative sparks | Brainstorms, product discussions |
-| 007 | First Principles | Core assumption audit & cognitive blind spot exposure | Strategic reasoning with hidden premises |
-| 008 | McKinsey Strategy | Strategic proposition identification & choice cost analysis | Major strategic trade-offs |
-| 009 | Meeting Secretary | Structured meeting documentation | Any meeting that needs records |
-| 010 | Business Negotiation | Game analysis: power, strategy, interests | Business negotiations, partnership discussions |
-| 011 | Casual Chat | Relationship & personality analysis | Friend/family conversations |
-| 012 | Opportunity Assessment | Collaboration value analysis: pain points, fit, risk signals | Business development, partnership exploration |
+| EN | CN |
+|----|-----|
+| **12 Analysis Methods** — Intelligently matched by recording type | **12种分析方法** — 根据录音类型智能匹配 |
+| **Multi-User Isolation** — Strict per-user data separation | **多用户隔离** — 每个用户的分析记录严格隔离 |
+| **Speaker Identity Inference** — Auto-identify with confidence scoring | **说话人身份推理** — 自动识别，置信度标注 |
+| **Cross-Recording Tracking** — Longitudinal stance & action tracking | **跨录音纵向追踪** — 立场演变、行动项兑现追踪 |
+| **Structured Output** — Judgment + Evidence + Visualization + Actions | **结构化输出** — 核心判断 + 证据引用 + 可视化 + 行动建议 |
 
 ---
 
-## Quick Start
+## 12 Analysis Methods · 12种分析方法
 
-### 1. Clone the Repository
+| # | EN | CN | Best For · 适用场景 |
+|---|-----|-----|---------------------|
+| 001 | Full Spectrum | 总秘·全谱分析 | Important strategy meetings · 重要战略会议 |
+| 002 | Bone Piercing | 问骨·一针见血 | High-density strategy/negotiations · 高密度战略/谈判 |
+| 003 | Topic Mining | 选题挖掘 | Lectures, original insights · 课堂/有思想输出的会议 |
+| 004 | Knowledge Architect | 知识结构师 | Framework discussions · 讲授型/框架性讨论 |
+| 005 | Execution Tracker | 执行力追踪 | Decision meetings, execution syncs · 决策会议/执行同步 |
+| 006 | Brainstorm Capture | 脑洞捕捉 | Brainstorms, product discussions · 头脑风暴/产品讨论 |
+| 007 | First Principles | 第一性原理 | Strategic reasoning with hidden premises · 有隐性前提的战略推演 |
+| 008 | McKinsey Strategy | 麦肯锡战略 | Major strategic trade-offs · 重大战略取舍 |
+| 009 | Meeting Secretary | 会议秘书 | Any meeting needing records · 任何需要留档的会议 |
+| 010 | Business Negotiation | 商务谈判 | Negotiations, partnerships · 商务谈判/合作协商 |
+| 011 | Casual Chat | 朋友聊天 | Friend/family conversations · 朋友/家人聊天 |
+| 012 | Opportunity Assessment | 商业机会评估 | Business development, partnerships · 商业拓展/合作洽谈 |
+
+---
+
+## Quick Start · 快速开始
+
+### 1. Clone · 克隆仓库
 
 ```bash
 git clone https://github.com/qiuyiwu1989-star/Deep-Insight-Agent.git
 cd Deep-Insight-Agent
 ```
 
-### 2. Understand the Structure
+### 2. Project Structure · 项目结构
 
 ```
 Deep-Insight-Agent/
@@ -59,91 +61,112 @@ Deep-Insight-Agent/
 │   ├── zh/                         # 中文版
 │   │   ├── SKILL.md                # 核心调度系统
 │   │   └── methods/                # 12种分析方法
-│   ├── references/                 # Shared references
-│   └── templates/                  # Output templates
+│   ├── references/                 # Shared references · 共享参考
+│   └── templates/                  # Output templates · 输出模板
 ├── memory/
-│   ├── DESIGN.md                   # Memory system design
-│   ├── schema/                     # Storage definitions
-│   └── examples/                   # Example files
+│   ├── DESIGN.md                   # Memory system design · 记忆系统设计
+│   ├── schema/                     # Storage definitions · 存储结构
+│   └── examples/                   # Examples · 示例文件
 ├── examples/
-│   ├── input/                      # Example inputs
-│   └── output/                     # Example outputs
+│   ├── input/                      # Example inputs · 示例输入
+│   └── output/                     # Example outputs · 示例输出
 └── docs/
-    ├── en/                         # English docs
+    ├── en/                         # English docs · 英文文档
     └── zh/                         # 中文文档
 ```
 
-### 3. Read the Entry Point
+### 3. Entry Points · 入口文件
 
-Start with `insight-engine/en/SKILL.md` (English) or `insight-engine/zh/SKILL.md` (中文) — the dispatch center that defines:
-- Content diagnosis logic
-- Method selection routing
-- Output quality standards
-- Persistence rules
+| Language | Entry Point |
+|----------|-------------|
+| English | [`insight-engine/en/SKILL.md`](insight-engine/en/SKILL.md) |
+| 中文 | [`insight-engine/zh/SKILL.md`](insight-engine/zh/SKILL.md) |
 
-### 4. Choose Your Method
+The entry point defines · 入口文件定义了:
+- Content diagnosis logic · 内容诊断逻辑
+- Method selection routing · 方法选择路由
+- Output quality standards · 输出质量标准
+- Persistence rules · 持久化规则
 
-Based on your recording type, select the corresponding method file from `insight-engine/en/methods/` or `insight-engine/zh/methods/` and follow its role definition and output structure.
+### 4. Choose Your Method · 选择方法
+
+| Language | Methods Directory |
+|----------|------------------|
+| English | [`insight-engine/en/methods/`](insight-engine/en/methods/) |
+| 中文 | [`insight-engine/zh/methods/`](insight-engine/zh/methods/) |
 
 ---
 
-## Usage
+## Usage · 使用方式
 
-### As an AI Agent Skill
-
-Load the `insight-engine/` directory as a skill in your AI Agent (OpenClaw, LangChain, etc.):
+### As an AI Agent Skill · 作为 AI Agent 技能
 
 ```yaml
 skills:
   - name: deep-insight
-    path: ./insight-engine/SKILL.md
-    methods: ./insight-engine/methods/
+    path: ./insight-engine/en/SKILL.md   # or zh/SKILL.md
+    methods: ./insight-engine/en/methods/
 ```
 
-### As an Analysis Methodology Reference
+### As a Methodology Reference · 作为方法论参考
 
-Read the method files in `insight-engine/methods/` directly and apply the analysis methods to your work.
+Read the method files directly and apply the analysis methods to your work.
+直接阅读方法文件，将分析方法应用于你的工作场景。
 
-### As a Framework to Extend
+### As a Framework to Extend · 作为框架扩展
 
-Create your own analysis methods based on the existing method structure. See [How to Add New Methods](docs/en/how-to-add-skills.md).
-
----
-
-## Core Design Principles
-
-### 1. Method Dispatch, Not a Single Analyzer
-
-The system doesn't have just one analysis mode. It **dynamically selects or combines** 12 methods based on content. Mixed recordings are segmented — the first half about business development, the second half about casual chat — each handled with different methods.
-
-### 2. Evidence-Driven, No Empty Talk
-
-Every judgment must be supported by original recording text. Insight without evidence = doesn't exist.
-
-### 3. Silence Is Also Information
-
-Topics proposed but ignored by everyone, quick topic switches — these silence signals are often more important than what was actually said.
-
-### 4. Strict Multi-User Isolation
-
-Different users' analysis records are completely isolated. Before reviewing history, confirm identity. Don't assume past collaboration. Don't cross-reference between users.
+Create your own analysis methods. See:
+- [How to Add New Methods (EN)](docs/en/how-to-add-skills.md)
+- [如何添加新方法](docs/zh/how-to-add-skills.md)
 
 ---
 
-## Contributing
+## Core Design Principles · 核心设计理念
 
-We welcome community contributions of new analysis methods! Each method is a standalone `.md` file — no need to understand the entire framework.
+### 1. Method Dispatch, Not a Single Analyzer · 方法调度，不是单一分析器
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+**EN**: The system dynamically selects or combines 12 methods based on content. Mixed recordings are segmented — each part handled with different methods.
+
+**CN**: 系统根据录音内容动态选择或组合12种方法。混合型录音会拆段路由——不同段落用不同方法处理。
+
+### 2. Evidence-Driven, No Empty Talk · 证据驱动，不空谈
+
+**EN**: Every judgment must be supported by original recording text. Insight without evidence = doesn't exist.
+
+**CN**: 每个判断必须有录音原文支撑。没有证据的洞察 = 不存在。
+
+### 3. Silence Is Also Information · 沉默也是信息
+
+**EN**: Topics proposed but ignored, quick topic switches — silence signals are often more important than what was said.
+
+**CN**: 话题被提出后无人响应、快速切换——沉默信号往往比发言更重要。
+
+### 4. Strict Multi-User Isolation · 多用户严格隔离
+
+**EN**: Different users' analysis records are completely isolated. Confirm identity before reviewing history.
+
+**CN**: 不同用户的分析记录完全隔离。回溯历史前先确认身份。
+
+---
+
+## Contributing · 贡献
+
+We welcome community contributions! Each method is a standalone `.md` file.
+
+我们欢迎社区贡献！每种方法是一个独立的 `.md` 文件。
+
+See · 详见: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+[MIT License](LICENSE)
 
 ---
 
-## Acknowledgments
+## Acknowledgments · 致谢
 
-This framework is open-sourced from the core methodology of the "冷静·深度洞察" (LengJing · Deep Insight) intelligent agent.
+This framework is open-sourced from the core methodology of the **「冷静·深度洞察」** (LengJing · Deep Insight) intelligent agent.
+
+本框架基于「冷静·深度洞察」智能体的核心方法论开源而成。
