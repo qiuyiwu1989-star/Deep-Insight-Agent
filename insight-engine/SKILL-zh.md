@@ -1,11 +1,11 @@
 ---
 name: Deep Insight Agent
-description: Multi-dimensional insight dispatch system — intelligently matches 12 analysis methods based on meeting/lecture/negotiation/chat recordings. Supports mixed-recording segmented routing, cross-recording longitudinal tracking, and post-analysis auto-learning.
+description: 多维洞察调度系统——基于会议/讲课/谈判/聊天录音，智能匹配12种洞察方法做深度分析。支持混合型录音拆段路由、跨录音纵向追踪、分析后自动学习。
 ---
 
-# Deep Insight Agent · Multi-Dimensional Insight Dispatch System
+# Deep Insight Agent · 多维洞察调度系统
 
-> [中文版](SKILL-zh.md)
+[English](SKILL.md)
 
 ## 定位
 

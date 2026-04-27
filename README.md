@@ -1,145 +1,146 @@
 # Deep Insight Agent
 
-> 将混沌的会议录音、讲课录音、战略讨论转化为可驱动决策的洞察资产。
+> Transform chaotic meeting recordings, lectures, and strategic discussions into actionable insight assets.
 
-Deep Insight Agent 是一个**深度洞察分析框架**——不是总结器，是真相的翻译官。
+Deep Insight Agent is a **deep insight analysis framework** — not a summarizer, but a translator of truth.
 
-它不复述别人说过的话，而是说出他们没说出口的真话。
+It doesn't repeat what people said. It reveals what they didn't say.
 
----
-
-## 核心能力
-
-- **12种分析方法**：根据录音类型智能匹配，覆盖战略研讨、商务谈判、头脑风暴、课堂讲授等场景
-- **多用户隔离**：每个用户的分析记录严格隔离，不跨用户引用
-- **说话人身份推理**：自动识别转写中的说话人，交叉验证，置信度标注
-- **跨录音纵向追踪**：同项目多次会议自动对比立场演变、行动项兑现
-- **结构化输出**：核心判断 + 证据引用 + 可视化 + 行动建议，不堆文字
+[中文版](README-zh.md)
 
 ---
 
-## 12种分析方法
+## Core Capabilities
 
-| # | 方法名 | 核心功能 | 适用场景 |
-|---|--------|---------|---------|
-| 001 | 总秘·全谱分析 | 完整的8维结构化分析 | 重要战略会议 |
-| 002 | 问骨·一针见血 | 刺穿表象，揭露真实意图与核心矛盾 | 高密度战略/融资/合作谈判 |
-| 003 | 选题挖掘 | 从录音中提取写作素材与文章方向 | 课堂录音/有思想输出的会议 |
-| 004 | 知识结构师 | 概念提取与知识图谱构建 | 讲授型内容/框架性讨论 |
-| 005 | 执行力追踪 | 区分承诺/假设/悬空事项 | 决策会议/执行同步会 |
-| 006 | 脑洞捕捉 | 创意火花的识别与展开 | 头脑风暴/产品讨论 |
-| 007 | 第一性原理 | 核心假设审计与认知盲区暴露 | 有隐性前提的战略推演 |
-| 008 | 麦肯锡战略 | 战略命题识别与选择代价分析 | 重大战略取舍 |
-| 009 | 会议秘书 | 结构化文档生成 | 任何需要留档的会议 |
-| 010 | 商务谈判 | 博弈拆解：权力、策略、利益分析 | 商务谈判/合作协商 |
-| 011 | 朋友聊天 | 关系与人格拆解 | 朋友/家人聊天录音 |
-| 012 | 商业机会评估 | 合作价值拆解：痛点、对接价值、风险信号 | 商业拓展/合作洽谈 |
+- **12 Analysis Methods**: Intelligently matched by recording type — covering strategy, negotiation, brainstorming, lectures, and more
+- **Multi-User Isolation**: Each user's analysis records are strictly isolated, no cross-user references
+- **Speaker Identity Inference**: Automatically identify speakers from transcripts with cross-validation and confidence scoring
+- **Cross-Recording Longitudinal Tracking**: Automatically compare stance evolution and action item fulfillment across multiple meetings
+- **Structured Output**: Core judgments + evidence citations + visualizations + action recommendations — no filler text
 
 ---
 
-## 快速开始
+## 12 Analysis Methods
 
-### 1. 克隆仓库
+| # | Method | Core Function | Best For |
+|---|--------|--------------|----------|
+| 001 | Full Spectrum | Complete 8-dimensional structured analysis | Important strategy meetings |
+| 002 | Bone Piercing | Penetrate surface, reveal true intentions & core contradictions | High-density strategy/fundraising/partnership negotiations |
+| 003 | Topic Mining | Extract writing materials & article directions from recordings | Lectures, meetings with original insights |
+| 004 | Knowledge Architect | Concept extraction & knowledge graph construction | Lectures, framework discussions |
+| 005 | Execution Tracker | Distinguish commitments/assumptions/hanging items | Decision meetings, execution syncs |
+| 006 | Brainstorm Capture | Identify & develop creative sparks | Brainstorms, product discussions |
+| 007 | First Principles | Core assumption audit & cognitive blind spot exposure | Strategic reasoning with hidden premises |
+| 008 | McKinsey Strategy | Strategic proposition identification & choice cost analysis | Major strategic trade-offs |
+| 009 | Meeting Secretary | Structured meeting documentation | Any meeting that needs records |
+| 010 | Business Negotiation | Game analysis: power, strategy, interests | Business negotiations, partnership discussions |
+| 011 | Casual Chat | Relationship & personality analysis | Friend/family conversations |
+| 012 | Opportunity Assessment | Collaboration value analysis: pain points, fit, risk signals | Business development, partnership exploration |
+
+---
+
+## Quick Start
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/qiuyiwu1989-star/Deep-Insight-Agent.git
 cd Deep-Insight-Agent
 ```
 
-### 2. 了解核心文件
+### 2. Understand the Structure
 
 ```
 Deep-Insight-Agent/
 ├── insight-engine/
-│   ├── SKILL.md              # 核心调度系统（入口）
-│   ├── methods/              # 12种分析方法
-│   ├── references/           # 路由规则、质量标准
-│   └── templates/            # 输出模板
+│   ├── SKILL.md              # Core dispatch system (entry point)
+│   ├── methods/              # 12 analysis methods
+│   ├── references/           # Routing rules, quality standards
+│   └── templates/            # Output templates
 ├── memory/
-│   ├── DESIGN.md             # 记忆系统设计
-│   ├── schema/               # 存储结构定义
-│   └── examples/             # 示例文件
+│   ├── DESIGN.md             # Memory system design
+│   ├── schema/               # Storage structure definitions
+│   └── examples/             # Example files
 ├── examples/
-│   ├── input/                # 示例输入
-│   └── output/               # 示例输出
+│   ├── input/                # Example inputs
+│   └── output/               # Example outputs
 └── docs/
-    ├── how-to-customize.md   # 如何自定义
-    ├── how-to-add-skills.md  # 如何添加新方法
-    └── memory-system.md      # 记忆系统设计原理
+    ├── how-to-customize.md   # How to customize
+    ├── how-to-add-skills.md  # How to add new methods
+    └── memory-system.md      # Memory system design principles
 ```
 
-### 3. 阅读入口文件
+### 3. Read the Entry Point
 
-从 `insight-engine/SKILL.md` 开始——这是整个系统的调度中心，定义了：
-- 内容诊断逻辑
-- 方法选择路由
-- 输出质量标准
-- 持久化规则
+Start with `insight-engine/SKILL.md` — the dispatch center that defines:
+- Content diagnosis logic
+- Method selection routing
+- Output quality standards
+- Persistence rules
 
-### 4. 选择你的方法
+### 4. Choose Your Method
 
-根据你的录音类型，选择对应的方法文件（`insight-engine/methods/`），按其中的角色定位和输出结构执行分析。
+Based on your recording type, select the corresponding method file from `insight-engine/methods/` and follow its role definition and output structure.
 
 ---
 
-## 使用方式
+## Usage
 
-### 作为 AI Agent 技能
+### As an AI Agent Skill
 
-将 `insight-engine/` 目录作为技能加载到你的 AI Agent（如 OpenClaw、LangChain 等）：
+Load the `insight-engine/` directory as a skill in your AI Agent (OpenClaw, LangChain, etc.):
 
 ```yaml
-# Agent 配置示例
 skills:
   - name: deep-insight
     path: ./insight-engine/SKILL.md
     methods: ./insight-engine/methods/
 ```
 
-### 作为分析方法论参考
+### As an Analysis Methodology Reference
 
-直接阅读 `insight-engine/methods/` 中的方法文件，将分析方法应用于你的工作场景。
+Read the method files in `insight-engine/methods/` directly and apply the analysis methods to your work.
 
-### 作为框架扩展
+### As a Framework to Extend
 
-基于现有方法结构，创建你自己的分析方法（见 [如何添加新方法](docs/how-to-add-skills.md)）。
-
----
-
-## 核心设计理念
-
-### 1. 方法调度，不是单一分析器
-
-系统不只有一个分析模式，而是根据录音内容**动态选择或组合**12种方法。混合型录音会拆段路由——前半段商业拓展、后半段闲聊，分别用不同方法处理。
-
-### 2. 证据驱动，不空谈
-
-每个判断必须有录音原文支撑。没有证据的洞察 = 不存在。
-
-### 3. 沉默也是信息
-
-话题被提出后无人响应、快速切换——这些沉默信号往往比发言更重要。
-
-### 4. 多用户严格隔离
-
-不同用户的分析记录完全隔离。回溯历史前先确认身份，不预设合作历史，不跨用户引用。
+Create your own analysis methods based on the existing method structure. See [How to Add New Methods](docs/en/how-to-add-skills.md).
 
 ---
 
-## 贡献
+## Core Design Principles
 
-我们欢迎社区贡献新的分析方法！每种方法是一个独立的 `.md` 文件，不需要理解整个框架。
+### 1. Method Dispatch, Not a Single Analyzer
 
-详见 [CONTRIBUTING.md](CONTRIBUTING.md)
+The system doesn't have just one analysis mode. It **dynamically selects or combines** 12 methods based on content. Mixed recordings are segmented — the first half about business development, the second half about casual chat — each handled with different methods.
+
+### 2. Evidence-Driven, No Empty Talk
+
+Every judgment must be supported by original recording text. Insight without evidence = doesn't exist.
+
+### 3. Silence Is Also Information
+
+Topics proposed but ignored by everyone, quick topic switches — these silence signals are often more important than what was actually said.
+
+### 4. Strict Multi-User Isolation
+
+Different users' analysis records are completely isolated. Before reviewing history, confirm identity. Don't assume past collaboration. Don't cross-reference between users.
+
+---
+
+## Contributing
+
+We welcome community contributions of new analysis methods! Each method is a standalone `.md` file — no need to understand the entire framework.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 ## License
 
-MIT License - 详见 [LICENSE](LICENSE)
+MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## 致谢
+## Acknowledgments
 
-本框架基于「冷静·深度洞察」智能体的核心方法论开源而成。
+This framework is open-sourced from the core methodology of the "冷静·深度洞察" (LengJing · Deep Insight) intelligent agent.
